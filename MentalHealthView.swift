@@ -8,39 +8,53 @@ import SwiftUI
 struct MentalHealthView: View {
   var body: some View {
       VStack {
-          Text("Welcome!                   How are you today?")
+          Text("Welcome!                                        How are you today?")
               .font(.title)
               .fontWeight(.medium)
               .multilineTextAlignment(.center)
               .padding(.top)
+            
           Text("Choose your emotion:")
               .padding(.top)
           HStack{
-              Button(":sob:") {
+              Button("😭") {
                   /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
               }
-              Button(":cry:") {
+              Button("😢") {
                   /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
               }
-              Button(":white_frowning_face:") {
+              Button("☹️") {
                   /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
               }
-              Button(":neutral_face:") {
+              Button("😐") {
                   /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
               }
-              Button(":slightly_smiling_face:") {
+              Button("🙂") {
                   /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
               }
-              Button(":grin:") {
+              Button("😁") {
                   /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
               }
-              Button(":smiley:") {
+              Button("😃") {
                   /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
               }
           }
           .padding(.top, 1.0)
-          Spacer()
-      }
+          
+          Text("Need a mental health break?")
+              .font(.title2)
+              .fontWeight(.regular)
+              .padding(.top)
+          List {
+              Text("Read a Book 📖")
+              Text("Meditate 🧘")
+              Text("Journal 📝")
+          }
+          
+          
+      }//vstack
+          
+          
   }
 }
 #Preview {
