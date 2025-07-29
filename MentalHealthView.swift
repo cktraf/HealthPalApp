@@ -51,9 +51,10 @@ struct MentalHealthView: View {
               Text("Journal 📝")
           }
           
+          
       }//vstack
           
-          Spacer()
+          
   }
 }
 #Preview {
