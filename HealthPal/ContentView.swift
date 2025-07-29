@@ -23,6 +23,7 @@ struct ContentView: View {
                   Label("Articles", systemImage: "newspaper.fill")
               }
       }//tab view
+      .navigationBarBackButtonHidden(true)
   }//body
 }//struct
 
