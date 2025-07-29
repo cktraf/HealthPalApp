@@ -8,11 +8,24 @@
 import SwiftUI
 struct ContentView: View {
   var body: some View {
-      VStack {
-          Text("Hello World")
-      }
-  }
-}
+      TabView {
+          MentalHealthView()
+              .tabItem {
+                  Label("Mental Log", systemImage: "brain.fill")
+              }
+
+          PhysicalHealthView()
+              .tabItem {
+                  Label("Physical Log", systemImage: "figure.run")
+              }
+          NewsView()
+              .tabItem {
+                  Label("Articles", systemImage: "newspaper.fill")
+              }
+      }//tab view
+  }//body
+}//struct
+
 #Preview {
   ContentView()
 }
