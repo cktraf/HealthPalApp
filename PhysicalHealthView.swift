@@ -10,7 +10,7 @@ struct PhysicalHealthView: View {
   var activityTime = 0
   var body: some View {
     ZStack {
-      Color.pink
+      Color.lightBlue
         .ignoresSafeArea(.all)
       VStack(alignment: .leading) {
         Text("Welcome, <name>!")
