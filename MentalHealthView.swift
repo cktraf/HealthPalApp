@@ -39,7 +39,7 @@ struct MentalHealthView: View {
               }
           }
           .padding(.top, 1.0)
-          Spacer()
+
       }
   }
 }
