@@ -13,6 +13,7 @@ struct PastPhysicalView: View {
     //let pastEntries : [[Int]] = [[]]
     var body: some View {
         VStack {
+            Text("Oldest Entries")
             List {
                 //pastEntires.append(physicalData)
                 ForEach(pastEntries.indices, id: \.self) { arrayIndex in
@@ -21,6 +22,7 @@ struct PastPhysicalView: View {
                     }//section
                 }//for each
             }//list
+            Text("Newest Entries")
         }//v stack
     }//body
 }//struct

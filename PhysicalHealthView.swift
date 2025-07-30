@@ -353,7 +353,10 @@ struct PhysicalHealthView: View {
               
             // SUBMIT BUTTON //
             Button("Submit") {
-            }
+                if physicalData.count == 5 {
+                    pastEntries.append(physicalData)
+                }//conditional
+            }//submit button
             .padding(0.0)
             .frame(width: 340, height: 50)
             .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
@@ -362,28 +365,28 @@ struct PhysicalHealthView: View {
             .padding(.top, 15)
             //.padding(.bottom, 30)
               
-            // test
+            // SEE PAST ENTRIES BUTTON //
             Button(action: {
-                if physicalData.count >= 5 {
-                    pastEntries.append(physicalData)
-                    showPastEntries = true
-                }
+                //if physicalData.count >= 5 {
+                    //pastEntries.append(physicalData)
+                showPastEntries = true
+                //}//condtional
             }) {
                 Text("See Past Entries")
-            }
+            }//past entries button
             .frame(width: 340, height: 50)
             .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
             .foregroundColor(.white)
             .cornerRadius(15)
             .padding(.bottom, 30)
-              
-              
+            
+            // NAV LINK FOR PAST ENTRIES (IMPORTANT) //
             NavigationLink(
                 destination: PastPhysicalView(pastEntries: $pastEntries),
                 isActive: $showPastEntries
             ) {
                 EmptyView()
-            }
+            }//past entries nav link
             .hidden()
               
           }// v stack
@@ -397,9 +400,4 @@ struct PhysicalHealthView: View {
     @Previewable @State var name = ""
     PhysicalHealthView(name: $name)
 }
-
-
-
-
-
 
