@@ -11,6 +11,7 @@
 		BD3D6D1D2E3968EA00E20113 /* PhysicalHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6D1C2E3968EA00E20113 /* PhysicalHealthView.swift */; };
 		BD3D6D1F2E3968F600E20113 /* MentalHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6D1E2E3968F600E20113 /* MentalHealthView.swift */; };
 		BD3D6D212E39690000E20113 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6D202E39690000E20113 /* LandingPage.swift */; };
+		BD3D6D2A2E3AA22C00E20113 /* PastPhysicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6D292E3AA22C00E20113 /* PastPhysicalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BD3D6D1C2E3968EA00E20113 /* PhysicalHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalHealthView.swift; sourceTree = "<group>"; };
 		BD3D6D1E2E3968F600E20113 /* MentalHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthView.swift; sourceTree = "<group>"; };
 		BD3D6D202E39690000E20113 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		BD3D6D292E3AA22C00E20113 /* PastPhysicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastPhysicalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +45,7 @@
 		BD3D6D022E3967BC00E20113 = {
 			isa = PBXGroup;
 			children = (
+				BD3D6D292E3AA22C00E20113 /* PastPhysicalView.swift */,
 				BD3D6D202E39690000E20113 /* LandingPage.swift */,
 				BD3D6D1E2E3968F600E20113 /* MentalHealthView.swift */,
 				BD3D6D1C2E3968EA00E20113 /* PhysicalHealthView.swift */,
@@ -136,6 +139,7 @@
 			files = (
 				BD3D6D1B2E3968D800E20113 /* NewsView.swift in Sources */,
 				BD3D6D1D2E3968EA00E20113 /* PhysicalHealthView.swift in Sources */,
+				BD3D6D2A2E3AA22C00E20113 /* PastPhysicalView.swift in Sources */,
 				BD3D6D212E39690000E20113 /* LandingPage.swift in Sources */,
 				BD3D6D1F2E3968F600E20113 /* MentalHealthView.swift in Sources */,
 			);

@@ -14,7 +14,7 @@ struct PhysicalHealthView: View {
     var painLevel : Int = 0
     var motivationLevel : Int = 0*/
     
-    @State private var physicalData = [0, 10, 0, 1, 2]
+    @State private var physicalData = [0, 0, 0, 0, 0]
     
     @Binding var name : String
     
@@ -56,6 +56,7 @@ struct PhysicalHealthView: View {
                   
                   // 20 minute button
                   Button("20") {
+                      physicalData[0] = 20
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -64,6 +65,7 @@ struct PhysicalHealthView: View {
                   
                   // 30 minute button
                   Button("30") {
+                      physicalData[0] = 30
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -72,6 +74,7 @@ struct PhysicalHealthView: View {
                   
                   // 40 minute button
                   Button("40") {
+                      physicalData[0] = 40
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -80,6 +83,7 @@ struct PhysicalHealthView: View {
                   
                   // 50 minute button
                   Button("50") {
+                      physicalData[0] = 50
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -88,6 +92,7 @@ struct PhysicalHealthView: View {
                   
                   // 60+ minute button
                   Button("60+") {
+                      physicalData[0] = 60
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -105,6 +110,7 @@ struct PhysicalHealthView: View {
             HStack {
                   // 10 percent button
                   Button("10%") {
+                      physicalData[1] = 10
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -113,6 +119,7 @@ struct PhysicalHealthView: View {
                   
                   // 25 percent button
                   Button("25%") {
+                      physicalData[1] = 25
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -121,6 +128,7 @@ struct PhysicalHealthView: View {
                   
                   // 50 percent button
                   Button("50%") {
+                      physicalData[1] = 50
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -129,6 +137,7 @@ struct PhysicalHealthView: View {
                   
                   // 75 percent button
                   Button("75%") {
+                      physicalData[1] = 75
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -137,6 +146,7 @@ struct PhysicalHealthView: View {
                   
                   // 90 percent button
                   Button("90%") {
+                      physicalData[1] = 90
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -145,6 +155,7 @@ struct PhysicalHealthView: View {
                   
                   // 100 percent button
                   Button("100%") {
+                      physicalData[1] = 100
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -162,6 +173,7 @@ struct PhysicalHealthView: View {
             HStack {
                   // 0 button
                   Button("0") {
+                      physicalData[2] = 0
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -170,6 +182,7 @@ struct PhysicalHealthView: View {
                   
                   // 1 button
                   Button("1") {
+                      physicalData[2] = 1
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -178,6 +191,7 @@ struct PhysicalHealthView: View {
                   
                   // 2 button
                   Button("2") {
+                      physicalData[2] = 2
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -186,6 +200,7 @@ struct PhysicalHealthView: View {
                   
                   // 3 button
                   Button("3") {
+                      physicalData[2] = 3
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -194,6 +209,7 @@ struct PhysicalHealthView: View {
                   
                   // 4 button
                   Button("4") {
+                      physicalData[2] = 4
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -202,6 +218,7 @@ struct PhysicalHealthView: View {
                   
                   // 5 button
                   Button("5") {
+                      physicalData[2] = 5
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -218,6 +235,7 @@ struct PhysicalHealthView: View {
             HStack {
                   // 0 button
                   Button("0") {
+                      physicalData[3] = 0
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -226,6 +244,7 @@ struct PhysicalHealthView: View {
                   
                   // 1 button
                   Button("1") {
+                      physicalData[3] = 1
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -234,6 +253,7 @@ struct PhysicalHealthView: View {
                   
                   // 2 button
                   Button("2") {
+                      physicalData[3] = 2
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -242,6 +262,7 @@ struct PhysicalHealthView: View {
                   
                   // 3 button
                   Button("3") {
+                      physicalData[3] = 3
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -250,6 +271,7 @@ struct PhysicalHealthView: View {
                   
                   // 4 button
                   Button("4") {
+                      physicalData[3] = 4
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -258,6 +280,7 @@ struct PhysicalHealthView: View {
                   
                   // 5 button
                   Button("5") {
+                      physicalData[3] = 5
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -273,6 +296,7 @@ struct PhysicalHealthView: View {
             HStack {
                   // 0 button
                   Button("0") {
+                      physicalData[4] = 0
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -281,6 +305,7 @@ struct PhysicalHealthView: View {
                   
                   // 1 button
                   Button("1") {
+                      physicalData[4] = 1
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -289,6 +314,7 @@ struct PhysicalHealthView: View {
                   
                   // 2 button
                   Button("2") {
+                      physicalData[4] = 2
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -297,6 +323,7 @@ struct PhysicalHealthView: View {
                   
                   // 3 button
                   Button("3") {
+                      physicalData[4] = 3
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -305,6 +332,7 @@ struct PhysicalHealthView: View {
                   
                   // 4 button
                   Button("4") {
+                      physicalData[4] = 4
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
@@ -313,6 +341,7 @@ struct PhysicalHealthView: View {
                   
                   // 5 button
                   Button("5") {
+                      physicalData[4] = 5
                   }
                   .frame(width: 50, height: 50)
                   .background(Color.darkBlue)
