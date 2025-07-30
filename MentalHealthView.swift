@@ -1,83 +1,133 @@
-//
-// MentalHealthView.swift
-// HealthPal
-//
-// Created by Scholar on 7/29/25.
-//
-
 import SwiftUI
+
 struct MentalHealthView: View {
-    @Binding var name : String
+    @Binding var name: String
+    @State private var message: String = ""
     var body: some View {
-        ZStack{
+        ZStack {
             Color.lightBlue
-            .ignoresSafeArea(.all)
+                .ignoresSafeArea(.all)
 
             VStack {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10)
+                    Rectangle()
                         .fill(Color.darkBlue)
-                        .frame(width: 270.0, height: 100.0)
-                    Text("Welcome \(name)! How are you today?")
+                        .frame(width: 350, height: 90)
+                        .cornerRadius(20)
+                    
+                    Text("Welcome \(name)!")
                         .foregroundColor(Color.white)
                         .font(.title)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                        .padding(.top)
-                        .padding(10)
-                        .border(Color.black, width: 5)
-                        .cornerRadius(10)
+                        .padding()
                 }
-                
-                    Text("Choose your emotion:")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .padding(.top)
-                    HStack(){
-                        Button("😭") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        }
-                        Button("😢") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        }
-                        Button("☹️") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        }
-                        Button("😐") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        }
-                        Button("🙂") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        }
-                        Button("😁") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        }
-                        Button("😃") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        }
+
+                Text("Choose your emotion:")
+                    .font(.title2)
+                    .fontWeight(.heavy)
+                    .padding(.top)
+                    .foregroundColor(Color.darkBlue)
+
+                HStack {
+                    Button("😭") {
+                        message = "Feeling very sad. It's okay to feel this way."
                     }
-                    .padding(15)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                    .padding(.top, 1.0)
-                    .cornerRadius(5)
+                    Button("😢") {
+                        message = "You seem down. Take a deep breath 💙"
+                    }
+                    Button("☹️") {
+                        message = "Feeling a little off today? Be kind to yourself."
+                    }
+                    Button("😐") {
+                        message = "Neutral days are part of the journey."
+                    }
+                    Button("🙂") {
+                        message = "Glad you're feeling alright!"
+                    }
+                    Button("😁") {
+                        message = "Feeling good! Keep it going! 💪"
+                    }
+                    Button("😃") {
+                        message = "You're shining today 🌟"
+                    }
+                }
+                .padding(15)
+                .border(Color.darkBlue, width: 3)
+                .cornerRadius(5)
+
+                
+                if !message.isEmpty {
+                    Text(message)
+                        .font(.headline)
+                        .foregroundColor(Color.darkBlue)
+                        .padding()
+                        .multilineTextAlignment(.center)
+                        .background(Color.white.opacity(0.3))
+                        .cornerRadius(10)
+                        .padding(.top)
+                }
+
+                Text("Need a mental health break?")
+                    .font(.title2)
+                    .fontWeight(.heavy)
+                    .padding(.vertical)
+                    .foregroundColor(Color.darkBlue)
+
+                Text("Read a Book 📖")
+                    .font(.title2)
+                    .foregroundColor(Color.darkBlue)
+
+                Text("Meditate 🧘")
+                    .font(.title2)
+                    .foregroundColor(Color.darkBlue)
+                
+                Text("Journal 📝")
+                    .font(.title2)
+                    .foregroundColor(Color.darkBlue)
+                
+                Text("Do some gardening 👩‍🌾")
+                    .font(.title2)
+                    .foregroundColor(Color.darkBlue)
+                
+                Text("Talk to a friend 🗣️")
+                    .font(.title2)
+                    .foregroundColor(Color.darkBlue)
+                
+                Text("Exercise 👟")
+                    .font(.title2)
+                    .foregroundColor(Color.darkBlue)
+                    .padding(.bottom)
                     
-                    Text("Need a mental health break?")
+    
+                    
+                    Text("How did your day go?")
                         .font(.title2)
-                        .fontWeight(.semibold)
-                        .padding(.vertical)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.darkBlue)
+                        .padding(.all)
                     
-                    Text("Read a Book 📖")
-                    Text("Meditate 🧘")
-                    Text("Journal 📝")
-                    
-                    
+                    TextField("Type Here...", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    .padding([.leading, .bottom, .trailing])
                     
                 Spacer()
-                }//vstack
                 
+                Button("Save and Refresh") {
+                    print("hi")
+                }
+                
+                Button("Click here to view past entries") {
+                    print("hi")
+                }
+                .padding(.top)
+                
+                
+            }
         }
     }
 }
+
+
 #Preview {
     @Previewable @State var name = ""
     MentalHealthView(name: $name)

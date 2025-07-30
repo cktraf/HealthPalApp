@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD3452C22E3ACFBE00E0F807 /* PastMentalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3452C12E3ACFBE00E0F807 /* PastMentalView.swift */; };
 		BD3D6D1B2E3968D800E20113 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6D1A2E3968D800E20113 /* NewsView.swift */; };
 		BD3D6D1D2E3968EA00E20113 /* PhysicalHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6D1C2E3968EA00E20113 /* PhysicalHealthView.swift */; };
 		BD3D6D1F2E3968F600E20113 /* MentalHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6D1E2E3968F600E20113 /* MentalHealthView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD3452C12E3ACFBE00E0F807 /* PastMentalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastMentalView.swift; sourceTree = "<group>"; };
 		BD3D6D0B2E3967BC00E20113 /* HealthPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3D6D1A2E3968D800E20113 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		BD3D6D1C2E3968EA00E20113 /* PhysicalHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalHealthView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 				BD3D6D292E3AA22C00E20113 /* PastPhysicalView.swift */,
 				BD3D6D202E39690000E20113 /* LandingPage.swift */,
 				BD3D6D1E2E3968F600E20113 /* MentalHealthView.swift */,
+				BD3452C12E3ACFBE00E0F807 /* PastMentalView.swift */,
 				BD3D6D1C2E3968EA00E20113 /* PhysicalHealthView.swift */,
 				BD3D6D1A2E3968D800E20113 /* NewsView.swift */,
 				BD3D6D0D2E3967BC00E20113 /* HealthPal */,
@@ -141,6 +144,7 @@
 				BD3D6D1D2E3968EA00E20113 /* PhysicalHealthView.swift in Sources */,
 				BD3D6D2A2E3AA22C00E20113 /* PastPhysicalView.swift in Sources */,
 				BD3D6D212E39690000E20113 /* LandingPage.swift in Sources */,
+				BD3452C22E3ACFBE00E0F807 /* PastMentalView.swift in Sources */,
 				BD3D6D1F2E3968F600E20113 /* MentalHealthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
