@@ -1,18 +1,37 @@
-//
-//  PastMentalView.swift
-//  HealthPal
-//
-//  Created by Scholar on 7/30/25.
-//
-
 import SwiftUI
 
-struct PastMentalView: View {
+struct PastEntriesView: View {
+    var entries: [String]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        VStack(alignment: .leading) {
+            Text("Your Past Journal Entries")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .padding()
 
-#Preview {
-    PastMentalView()
+            if entries.isEmpty {
+                Text("No entries yet.")
+                    .foregroundColor(.white)
+                    .padding()
+            } else {
+                ScrollView {
+                    ForEach(entries.indices, id: \.self) { index in
+                        Text("• \(entries[index])")
+                            .padding()
+                            .background(Color.white.opacity(0.2))
+                            .cornerRadius(10)
+                            .padding(.horizontal)
+                            .padding(.bottom, 5)
+                            .foregroundColor(.white)
+                    }
+                }
+            }
+
+            Spacer()
+        }
+        .background(Color.lightBlue)
+        .ignoresSafeArea()
+    }
 }
