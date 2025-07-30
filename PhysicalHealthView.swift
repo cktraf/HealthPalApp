@@ -15,6 +15,8 @@ struct PhysicalHealthView: View {
     var motivationLevel : Int = 0*/
     
     @State private var physicalData = [0, 0, 0, 0, 0]
+    @State private var pastEntries: [[Int]] = []
+    @State private var showPastEntries = false
     
     @Binding var name : String
     
@@ -353,12 +355,36 @@ struct PhysicalHealthView: View {
             Button("Submit") {
             }
             .padding(0.0)
-            .frame(width: 340, height: 70)
+            .frame(width: 340, height: 50)
             .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
             .foregroundColor(.white)
             .cornerRadius(15)
-            .padding(.top, 30)
+            .padding(.top, 15)
+            //.padding(.bottom, 30)
+              
+            // test
+            Button(action: {
+                if physicalData.count >= 5 {
+                    pastEntries.append(physicalData)
+                    showPastEntries = true
+                }
+            }) {
+                Text("See Past Entries")
+            }
+            .frame(width: 340, height: 50)
+            .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+            .foregroundColor(.white)
+            .cornerRadius(15)
             .padding(.bottom, 30)
+              
+              
+            NavigationLink(
+                destination: PastPhysicalView(pastEntries: $pastEntries),
+                isActive: $showPastEntries
+            ) {
+                EmptyView()
+            }
+            .hidden()
               
           }// v stack
     }// z stack
@@ -369,7 +395,7 @@ struct PhysicalHealthView: View {
 
 #Preview {
     @Previewable @State var name = ""
-    PhysicalHealthView( name: $name)
+    PhysicalHealthView(name: $name)
 }
 
 
