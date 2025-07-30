@@ -58,7 +58,7 @@ struct PhysicalHealthView: View {
                   Button("20") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -66,7 +66,7 @@ struct PhysicalHealthView: View {
                   Button("30") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -74,7 +74,7 @@ struct PhysicalHealthView: View {
                   Button("40") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -82,7 +82,7 @@ struct PhysicalHealthView: View {
                   Button("50") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -90,7 +90,7 @@ struct PhysicalHealthView: View {
                   Button("60+") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -107,7 +107,7 @@ struct PhysicalHealthView: View {
                   Button("10%") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -115,7 +115,7 @@ struct PhysicalHealthView: View {
                   Button("25%") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -123,7 +123,7 @@ struct PhysicalHealthView: View {
                   Button("50%") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -131,7 +131,7 @@ struct PhysicalHealthView: View {
                   Button("75%") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -139,7 +139,7 @@ struct PhysicalHealthView: View {
                   Button("90%") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -147,7 +147,7 @@ struct PhysicalHealthView: View {
                   Button("100%") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -164,7 +164,7 @@ struct PhysicalHealthView: View {
                   Button("0") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -172,7 +172,7 @@ struct PhysicalHealthView: View {
                   Button("1") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -180,7 +180,7 @@ struct PhysicalHealthView: View {
                   Button("2") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -188,7 +188,7 @@ struct PhysicalHealthView: View {
                   Button("3") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -196,7 +196,7 @@ struct PhysicalHealthView: View {
                   Button("4") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -204,7 +204,7 @@ struct PhysicalHealthView: View {
                   Button("5") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
             }//h stack exhaustion
@@ -220,7 +220,7 @@ struct PhysicalHealthView: View {
                   Button("0") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -228,7 +228,7 @@ struct PhysicalHealthView: View {
                   Button("1") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -236,7 +236,7 @@ struct PhysicalHealthView: View {
                   Button("2") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -244,7 +244,7 @@ struct PhysicalHealthView: View {
                   Button("3") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -252,7 +252,7 @@ struct PhysicalHealthView: View {
                   Button("4") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -260,7 +260,7 @@ struct PhysicalHealthView: View {
                   Button("5") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
             }//end of h stack soreness and pain
@@ -275,7 +275,7 @@ struct PhysicalHealthView: View {
                   Button("0") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -283,7 +283,7 @@ struct PhysicalHealthView: View {
                   Button("1") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -291,7 +291,7 @@ struct PhysicalHealthView: View {
                   Button("2") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -299,7 +299,7 @@ struct PhysicalHealthView: View {
                   Button("3") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -307,7 +307,7 @@ struct PhysicalHealthView: View {
                   Button("4") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -315,7 +315,7 @@ struct PhysicalHealthView: View {
                   Button("5") {
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
             }//end of h stack motivation
