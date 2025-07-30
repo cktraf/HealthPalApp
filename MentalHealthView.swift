@@ -14,8 +14,8 @@ struct MentalHealthView: View {
             VStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.white)
-                        .frame(width: 400.0, height: 100.0)
+                        .fill(Color.blue)
+                        .frame(width: 270.0, height: 100.0)
                     Text("Welcome! How are you today?")
                         .font(.title)
                         .fontWeight(.bold)
