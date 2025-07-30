@@ -8,16 +8,18 @@
 import SwiftUI
 struct PhysicalHealthView: View {
     
-    var activityTime : String = ""
+    /*var activityTime : String = ""
     var activityIntensity : String = ""
     var exhaustionLevel : Int = 0
     var painLevel : Int = 0
-    var motivationLevel : Int = 0
+    var motivationLevel : Int = 0*/
     
-    var physicalData = [10, 10, 0, 1, 2]
+    @State private var physicalData = [0, 10, 0, 1, 2]
+    
+    @Binding var name : String
     
     var body: some View {
-        
+        //var physicalData = [0, 10, 0, 1, 2]
     ZStack {
         // SCREEN SETUP //
         // set background color
@@ -26,7 +28,7 @@ struct PhysicalHealthView: View {
         // vstack containing each row
           VStack(alignment: .leading) {
               // welcome text, large
-              Text("Welcome, <name>!")
+              Text("Welcome, \(name)!")
                   .font(.title)
                   .multilineTextAlignment(.leading)
               // description text, large
@@ -45,10 +47,10 @@ struct PhysicalHealthView: View {
                   // 10 minute button, 50x50, blue background, white text
                   // rounded corners
                   Button("10") {
-                      
+                      physicalData[0] = 10
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
@@ -335,8 +337,10 @@ struct PhysicalHealthView: View {
 }// struct
 
 // PAGE MECHANICS //
+
 #Preview {
-  PhysicalHealthView()
+    @Previewable @State var name = ""
+    PhysicalHealthView( name: $name)
 }
 
 
