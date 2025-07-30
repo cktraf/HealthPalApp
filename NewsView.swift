@@ -8,6 +8,29 @@
 import SwiftUI
 
 struct NewsView: View {
+    let articleLinks: [String] = [
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+        "https://www.google.com",
+    ]
+
     var body: some View {
         ZStack {
             Color(red: 185/255, green: 230/255, blue: 255/255)
@@ -25,15 +48,19 @@ struct NewsView: View {
                     }
                     .padding(.top, 20)
 
-                    ForEach(1...20, id: \.self) { index in
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(Color(red: 56/255, green: 182/255, blue: 255/255))
-                                .frame(width: 350, height: 80)
-                            Text("Article link \(index)")
-                                .foregroundColor(.white)
-                                .underline()
-                                .font(.custom("TimesNewRomanPSMT", size: 20))
+                    ForEach(0..<articleLinks.count, id: \.self) { index in
+                        if let url = URL(string: articleLinks[index]) {
+                            Link(destination: url) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .fill(Color(red: 56/255, green: 182/255, blue: 255/255))
+                                        .frame(width: 350, height: 80)
+                                    Text("Article link \(index + 1)")
+                                        .underline()
+                                        .foregroundColor(.white)
+                                        .font(.custom("TimesNewRomanPSMT", size: 20))
+                                }
+                            }
                         }
                     }
                 }
