@@ -14,10 +14,10 @@ struct PhysicalHealthView: View {
     var painLevel : Int = 0
     var motivationLevel : Int = 0
     
-    var physicalData = [10, 10, 0, 1, 2]
+    @State private var physicalData = [0, 10, 0, 1, 2]
     
     var body: some View {
-        
+        //var physicalData = [0, 10, 0, 1, 2]
     ZStack {
         // SCREEN SETUP //
         // set background color
@@ -45,10 +45,10 @@ struct PhysicalHealthView: View {
                   // 10 minute button, 50x50, blue background, white text
                   // rounded corners
                   Button("10") {
-                      
+                      physicalData[0] = 10
                   }
                   .frame(width: 50, height: 50)
-                  .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
+                  .background(Color.darkBlue)
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
                   
