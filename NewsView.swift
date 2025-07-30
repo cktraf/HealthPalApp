@@ -30,7 +30,7 @@ struct NewsView: View {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(Color(red: 56/255, green: 182/255, blue: 255/255))
                                 .frame(width: 350, height: 80)
-                            Text("Article \(index)")
+                            Text("Article link \(index)")
                                 .foregroundColor(.white)
                                 .font(.custom("TimesNewRomanPSMT", size: 20))
                         }
