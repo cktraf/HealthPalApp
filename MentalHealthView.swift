@@ -15,19 +15,23 @@ struct MentalHealthView: View {
 
             VStack {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.darkBlue)
-                        .frame(width: 270.0, height: 100.0)
+                    Rectangle()
+                        .fill(Color(red: 56/255, green: 182/255, blue: 255/255))
+                        .frame(width: 350, height: 90)
+                        .cornerRadius(20)
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
+                        .cornerRadius(20)
                     Text("Welcome \(name)! How are you today?")
-                        .foregroundColor(Color.white)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .padding(.top)
-                        .padding(10)
-                        .border(Color.black, width: 5)
-                        .cornerRadius(10)
-                }
+                            .foregroundColor(Color.white)
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .padding(10)
+                
+                    
+                   
+                }//zstack
                 
                     Text("Choose your emotion:")
                         .font(.title2)
