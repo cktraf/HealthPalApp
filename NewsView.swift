@@ -32,6 +32,7 @@ struct NewsView: View {
                                 .frame(width: 350, height: 80)
                             Text("Article link \(index)")
                                 .foregroundColor(.white)
+                                .underline()
                                 .font(.custom("TimesNewRomanPSMT", size: 20))
                         }
                     }
