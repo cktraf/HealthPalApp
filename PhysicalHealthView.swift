@@ -8,13 +8,15 @@
 import SwiftUI
 struct PhysicalHealthView: View {
     
-    var activityTime : String = ""
+    /*var activityTime : String = ""
     var activityIntensity : String = ""
     var exhaustionLevel : Int = 0
     var painLevel : Int = 0
-    var motivationLevel : Int = 0
+    var motivationLevel : Int = 0*/
     
     @State private var physicalData = [0, 10, 0, 1, 2]
+    
+    @Binding var name : String
     
     var body: some View {
         //var physicalData = [0, 10, 0, 1, 2]
@@ -26,7 +28,7 @@ struct PhysicalHealthView: View {
         // vstack containing each row
           VStack(alignment: .leading) {
               // welcome text, large
-              Text("Welcome, <name>!")
+              Text("Welcome, \(name)!")
                   .font(.title)
                   .multilineTextAlignment(.leading)
               // description text, large
@@ -335,8 +337,10 @@ struct PhysicalHealthView: View {
 }// struct
 
 // PAGE MECHANICS //
+
 #Preview {
-  PhysicalHealthView()
+    @Previewable @State var name = ""
+    PhysicalHealthView( name: $name)
 }
 
 

@@ -7,6 +7,8 @@
 
 import SwiftUI
 struct ContentView: View {
+    @Binding var name : String
+    
   var body: some View {
       TabView {
           MentalHealthView()
@@ -14,7 +16,7 @@ struct ContentView: View {
                   Label("Mental Log", systemImage: "brain.fill")
               }
 
-          PhysicalHealthView()
+          PhysicalHealthView(name: $name)
               .tabItem {
                   Label("Physical Log", systemImage: "figure.run")
               }
@@ -28,5 +30,6 @@ struct ContentView: View {
 }//struct
 
 #Preview {
-  ContentView()
+    @Previewable @State var name = ""
+    ContentView(name: $name)
 }
