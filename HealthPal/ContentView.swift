@@ -11,7 +11,7 @@ struct ContentView: View {
     
   var body: some View {
       TabView {
-          MentalHealthView()
+          MentalHealthView(name: $name)
               .tabItem {
                   Label("Mental Log", systemImage: "brain.fill")
               }

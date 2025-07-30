@@ -7,6 +7,7 @@
 
 import SwiftUI
 struct MentalHealthView: View {
+    @Binding var name : String
     var body: some View {
         ZStack{
             Color.lightBlue
@@ -17,7 +18,7 @@ struct MentalHealthView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.darkBlue)
                         .frame(width: 270.0, height: 100.0)
-                    Text("Welcome! How are you today?")
+                    Text("Welcome \(name)! How are you today?")
                         .foregroundColor(Color.white)
                         .font(.title)
                         .fontWeight(.bold)
@@ -78,5 +79,6 @@ struct MentalHealthView: View {
     }
 }
 #Preview {
-  MentalHealthView()
+    @Previewable @State var name = ""
+    MentalHealthView(name: $name)
 }
