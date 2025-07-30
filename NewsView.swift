@@ -25,7 +25,7 @@ struct NewsView: View {
                     }
                     .padding(.top, 20)
 
-                    ForEach(1...12, id: \.self) { index in
+                    ForEach(1...20, id: \.self) { index in
                         ZStack {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(Color(red: 56/255, green: 182/255, blue: 255/255))
