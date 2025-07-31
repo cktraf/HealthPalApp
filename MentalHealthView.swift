@@ -45,7 +45,7 @@ struct MentalHealthView: View {
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
-                                .padding(.top)
+                                
                         } // end ZStack (banner)
 
                         // Emotion Picker
