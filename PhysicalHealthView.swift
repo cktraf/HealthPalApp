@@ -393,8 +393,43 @@ struct PhysicalHealthView: View {
             .hidden()
               
           }// v stack
+          .onAppear {
+              pastEntries = loadData()
+          }
+          .onChange(of: pastEntries) { newValue in
+              print("pastEntries changed, saving...")
+              saveData(newValue)
+          }
     }// z stack
   }// body
+    
+    func saveData(_ data: [[Int]]) {
+            let url = getDocumentsDirectory().appendingPathComponent("data.json")
+            do {
+                let encoded = try JSONEncoder().encode(data)
+                try encoded.write(to: url)
+                print("Saved data")
+            } catch {
+                print("Error saving data:", error)
+            }
+        }
+
+        func loadData() -> [[Int]] {
+            let url = getDocumentsDirectory().appendingPathComponent("data.json")
+            do {
+                let data = try Data(contentsOf: url)
+                let decoded = try JSONDecoder().decode([[Int]].self, from: data)
+                print("Loaded data")
+                return decoded
+            } catch {
+                print("Error loading data:", error)
+                return []
+            }
+        }
+
+        func getDocumentsDirectory() -> URL {
+            FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        }
 }// struct
 
 // PAGE MECHANICS //
