@@ -37,13 +37,13 @@ struct PhysicalHealthView: View {
               Text("Log Activity:")
                   .font(.title)
                   .multilineTextAlignment(.leading)
-                  .padding(.bottom, 10)
+                  .padding(.bottom, 5)
               
               // ACTIVITY TIME //
               // category label, medium
               Text("Activity Time (minutes):")
                   .font(.title3)
-              
+                  .padding(.bottom, -1)
               // h stack containing activity time buttons
               HStack {
                   // 10 minute button, 50x50, blue background, white text
@@ -103,11 +103,12 @@ struct PhysicalHealthView: View {
                   
               }//end of h stack activity time
               // format h stack
-            .padding(.bottom, 10)
+            .padding(.bottom, 8)
               
             // ACTIVITY INTENSITY //
             Text("Activity Intensity (% of your max):")
               .font(.title3)
+              .padding(.bottom, -1)
             // buttons for intensity
             HStack {
                   // 10 percent button
@@ -166,11 +167,12 @@ struct PhysicalHealthView: View {
                   
             }//end of h stack activity intensity
               // format stack
-            .padding(.bottom, 10)
+            .padding(.bottom, 8)
               
             // EXHAUSTION //
             Text("Exhaustion (none to high):")
               .font(.title3)
+              .padding(.bottom, -1)
             // h stack holding exhaustion buttons
             HStack {
                   // 0 button
@@ -228,11 +230,12 @@ struct PhysicalHealthView: View {
                   .cornerRadius(7)
             }//h stack exhaustion
               // format h stack
-            .padding(.bottom, 10)
+            .padding(.bottom, 8)
               
             // SORENESS AND PAIN //
             Text("Soreness and/or Pain (none to lots):")
               .font(.title3)
+              .padding(.bottom, -1)
             // h stack holding soreness buttons
             HStack {
                   // 0 button
@@ -289,11 +292,12 @@ struct PhysicalHealthView: View {
                   .foregroundColor(Color.white)
                   .cornerRadius(7)
             }//end of h stack soreness and pain
-            .padding(.bottom, 10)
+            .padding(.bottom, 8)
               
             // MOTIVATION //
             Text("Motivation (none to lots):")
               .font(.title3)
+              .padding(.bottom, -1)
             // motivation h stack buttons
             HStack {
                   // 0 button
@@ -362,8 +366,7 @@ struct PhysicalHealthView: View {
             .background(Color(hue: 0.633, saturation: 0.86, brightness: 0.601))
             .foregroundColor(.white)
             .cornerRadius(15)
-            .padding(.top, 15)
-            //.padding(.bottom, 30)
+            .padding(.top, 10)
               
             // SEE PAST ENTRIES BUTTON //
             Button(action: {
