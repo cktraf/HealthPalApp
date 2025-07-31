@@ -44,7 +44,7 @@ struct LandingPage: View {
                     .padding()*/
                     
                     // test
-                    Button("Save Name") {
+                    Button("Log Your Health") {
                         UserDefaults.standard.set(name, forKey: "userName")
                         print("Saved name:", name)
                         navigateToContentView = true  // trigger navigation
