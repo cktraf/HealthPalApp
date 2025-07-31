@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct PastEntriesView: View {
-    var entries: [String]
+struct PastMentalView: View {
+    var entries: [MentalHealthView.Entry]
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -9,24 +9,36 @@ struct PastEntriesView: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
-                .padding()
+                .padding([.top, .horizontal])
 
             if entries.isEmpty {
                 Text("No entries yet.")
                     .foregroundColor(.white)
                     .padding()
             } else {
-                ScrollView {
-                    ForEach(entries.indices, id: \.self) { index in
-                        Text("• \(entries[index])")
-                            .padding()
-                            .background(Color.white.opacity(0.2))
-                            .cornerRadius(10)
-                            .padding(.horizontal)
-                            .padding(.bottom, 5)
-                            .foregroundColor(.white)
+                List {
+                    ForEach(entries) { entry in
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("🧠 Emotion:")
+                                .font(.headline)
+                                .foregroundColor(.darkBlue)
+                            Text(entry.emotionMessage)
+                                .foregroundColor(.black)
+                                .fixedSize(horizontal: false, vertical: true)
+
+                            Text("📓 Journal:")
+                                .font(.headline)
+                                .foregroundColor(.darkBlue)
+                                .padding(.top, 4)
+                            Text(entry.textEntry)
+                                .foregroundColor(.black)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        .padding(.vertical, 8)
                     }
                 }
+                //.listStyle(InsetGroupedListStyle())
+                .background(Color.lightBlue)
             }
 
             Spacer()
