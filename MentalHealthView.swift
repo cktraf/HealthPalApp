@@ -95,12 +95,13 @@ struct MentalHealthView: View {
                             Text("Exercise 👟")
                         }
                         .font(.title2)
+                        .fontWeight(.medium)
                         .foregroundColor(Color.darkBlue)
 
                         // Journal Prompt
                         Text("How did your day go?")
                             .font(.title2)
-                            .fontWeight(.bold)
+                            .fontWeight(.heavy)
                             .foregroundColor(Color.darkBlue)
                             .padding([.top, .leading, .trailing])
 
